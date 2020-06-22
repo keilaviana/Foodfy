@@ -49,9 +49,49 @@ header nav a{
 
 .Hero div h1{
     margin-bottom: 10px;
+    font-size: 32px;
+    color: #111111;
 }
 
 .Hero img{
     margin: auto auto 0;
 }
 
+/* ======== main content =========== */
+
+.content{
+    margin: 0 230px;
+}
+
+.content h2{
+    font-weight: bold;
+    font-size: 24px;
+    color: #111111;
+    margin-bottom: 20px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card img {
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+    margin: 0;
+}
+
+.card h3{
+    font-size: 18px;
+    color: #111111;
+    font-weight: 500;
+    margin: 20px 0 5px;
+}
+
+.card p{
+    font-weight: normal;
+    font-size: 14px;
+    color: #777777;
+}
