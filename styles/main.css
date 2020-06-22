@@ -3,3 +3,28 @@
     margin: 0;
     padding: 0;
 }
+
+header{
+    display: flex;
+    margin: 7.55rem 19.25rem 2.5rem;
+    align-items: center;
+    flex-direction: row;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0;
+    margin-left: 10.2rem;
+}
+
+header nav a{
+    margin-right: 2.5rem;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #111111;
+    line-height: 26px;
+}
