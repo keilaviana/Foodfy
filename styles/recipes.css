@@ -1,0 +1,12 @@
+#receitas{
+    font-weight: bolder;
+}
+
+.recipes{
+    margin: 50px 230px;
+    max-width: 940px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
