@@ -30,6 +30,11 @@ header nav a{
     line-height: 26px;
 }
 
+header nav a:hover{
+    transition: 400ms;
+    font-weight: bolder;
+}
+
 /* ============ MAIN ============= */
 
 .Hero{
