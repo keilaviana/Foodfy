@@ -1,0 +1,28 @@
+#sobre{
+    font-weight: 900;
+}
+
+.about{
+    max-width:940px ;
+    margin: 50px 230px;
+}
+
+.about h1{
+    font-weight: bold;
+    font-size: 24px;
+    color: #111111;
+}
+
+.about p{
+    font-weight: normal;
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+
+    margin: 20px 0 30px;
+}
+
+.about h2{
+    font-size: 20px;
+    color: #111111;
+}
