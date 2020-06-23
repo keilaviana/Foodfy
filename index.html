@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/modal.css">
 
     <title>Foodfy</title>
 </head>
@@ -34,31 +35,31 @@
             <h2>Mais acessadas</h2>
             <div class="cards">
                 <div class="card" id="card1">
-                    <img src="./assets/burger.png" alt="Triplo bacon burger">
+                    <img src="./assets/burger.png" alt="Triplo bacon burger" id="burger">
                     <h3>Triplo bacon burger</h3>
                     <p>por Jorge Relato</p>
                 </div>
 
                 <div class="card" id="card2">
-                    <img src="./assets/pizza.png" alt="Pizza 4 estações">
+                    <img src="./assets/pizza.png" alt="Pizza 4 estações" id="pizza">
                     <h3>Pizza 4 estações</h3>
                     <p>por Fabiana Melo</p>
                 </div>
 
                 <div class="card" id="card3">
-                    <img src="./assets/espaguete.png" alt="Espaguete ao alho">
+                    <img src="./assets/espaguete.png" alt="Espaguete ao alho" id="espaguete">
                     <h3>Espaguete ao alho</h3>
                     <p>por Júlia Kinoto</p>
                 </div>
 
                 <div class="card" id="card4">
-                    <img src="./assets/lasanha.png" alt="Lasanha mac n' cheese">
+                    <img src="./assets/lasanha.png" alt="Lasanha mac n' cheese" id="lasanha">
                     <h3>Lasanha mac n' cheese</h3>
                     <p>por Juliano Vieira</p>
                 </div>
 
                 <div class="card" id="card5">
-                    <img src="./assets/doce.png" alt="Docinhos pão-do-céu">
+                    <img src="./assets/doce.png" alt="Docinhos pão-do-céu" id="doce">
                     <h3>Docinhos pão-do-céu</h3>
                     <p>por Ricardo Golvea</p>
                 </div>
@@ -75,6 +76,23 @@
     <footer>
         <p>Todos direitos reservados, receitas Foodfy.</p>
     </footer>
-    
+
+    <div class="modal-content">
+        <div class="modal">
+            <div class="modal-image">
+                <img src=""  alt="receita">
+            </div>
+            <div class="modal-title">
+                <p></p>
+            </div>
+           <div class="modal-autor">
+                <p></p>
+           </div>
+            
+            <p class="close">Fechar modal</p>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
