@@ -1,5 +1,5 @@
 {
-  "name": "Foodfy",
+  "name": "foodfy",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -7,15 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/keilaviana/Foodfy.git"
-  },
+  
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/keilaviana/Foodfy/issues"
-  },
-  "homepage": "https://github.com/keilaviana/Foodfy#readme"
+  "license": "ISC"
 }
