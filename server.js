@@ -2,6 +2,10 @@ const express = require("express")
 
 const server = express() 
 
-server.listen(6000, function(){
+server.get("/", function(req, res){
+    return res.send("enviando msg")
+})
+
+server.listen(5500, function(){
     console.log("servidor rodando")
 })
