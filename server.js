@@ -24,6 +24,11 @@ server.get("/recipes", function(req, res){
     return res.render("recipes", {items: receitas})
 })
 
+server.get("/recipes/:index", function(req, res){
+    const receitasIndex = req.params.index
+    return res.render('preparo', {item: receitas[receitasIndex]})
+})
+
 server.listen(5500, function(){
     console.log("servidor rodando")
 })
