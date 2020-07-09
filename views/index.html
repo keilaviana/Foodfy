@@ -15,41 +15,14 @@
         <div class="content">
             <h2>Receitas</h2>
             <div class="cards">
-                <div class="card" id="card1">
-                    <img src="./assets/burger.png" alt="Triplo bacon burger" id="burger">
-                    <h3>Triplo bacon burger</h3>
-                    <p>por Jorge Relato</p>
-                </div>
 
-                <div class="card" id="card2">
-                    <img src="./assets/pizza.png" alt="Pizza 4 estações" id="pizza">
-                    <h3>Pizza 4 estações</h3>
-                    <p>por Fabiana Melo</p>
+                {% for receita in items%}
+                <div class="card" id="{{receita.id}}">
+                    <img src="{{receita.image}}" alt="{{receita.title}}" >
+                    <h3>{{receita.title}}</h3>
+                    <p>por {{receita.author}}</p>
                 </div>
-
-                <div class="card" id="card3">
-                    <img src="./assets/espaguete.png" alt="Espaguete ao alho" id="espaguete">
-                    <h3>Espaguete ao alho</h3>
-                    <p>por Júlia Kinoto</p>
-                </div>
-
-                <div class="card" id="card4">
-                    <img src="./assets/lasanha.png" alt="Lasanha mac n' cheese" id="lasanha">
-                    <h3>Lasanha mac n' cheese</h3>
-                    <p>por Juliano Vieira</p>
-                </div>
-
-                <div class="card" id="card5">
-                    <img src="./assets/doce.png" alt="Docinhos pão-do-céu" id="doce">
-                    <h3>Docinhos pão-do-céu</h3>
-                    <p>por Ricardo Golvea</p>
-                </div>
-
-                <div class="card" id="card6">
-                    <img src="./assets/asinhas.png" alt="Asinhas de frango ao barbecue">
-                    <h3>Asinhas de frango ao barbecue</h3>
-                    <p>por Vania Steroski</p>
-                </div>
+                {% endfor%}
             </div>
         </div>
     </main>
