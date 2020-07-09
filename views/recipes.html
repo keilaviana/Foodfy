@@ -1,28 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends "layout.html" %}
 
-    <link rel="stylesheet" href="./styles/main.css">
-
+    {% block head%}
     <link rel="stylesheet" href="./styles/recipes.css">
+    {% endblock%}
 
-    <link rel="stylesheet" href="./styles/modal.css">
-
-    <title>Foodfy</title>
-</head>
-<body>
-    <header>
-        <a href="/">
-            <img src="./assets/logo.png" alt="Logo">
-        </a>
-        <nav>
-            <a href="/about" id="sobre">Sobre</a>
-            <a href="/recipes" id="receitas">Receitas</a>
-        </nav>
-    </header>
-
+ 
+{% block content %}
     <main class="recipes">
         <div class="card" id="card1">
             <img src="./assets/burger.png" alt="Triplo bacon burger" id="burger">
@@ -96,29 +79,5 @@
             <p>por Vania Steroski</p>
         </div>
     </main>
-
-    <footer>
-        <p>Todos direitos reservados, receitas Foodfy.</p>
-    </footer>
-
-    <div class="modal-content">
-        <div class="modal">
-            <div class="modal-image">
-                <img src=""  alt="receita">
-            </div>
-            <div class="modal-title">
-                <p></p>
-            </div>
-           <div class="modal-autor">
-                <p></p>
-           </div>
-            
-            <p class="close">Fechar modal</p>
-        </div>
-
-    </div>
-
     <script src="script.js"></script>
-    
-</body>
-</html>
+{% endblock %}
