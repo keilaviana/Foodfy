@@ -1,17 +1,19 @@
 {% extends "layout.html" %}
 
-
+{% block head%}
+    <link rel="stylesheet" href="/styles/preparo.css">
+{% endblock%}
 
 {% block content %}
 <main>
     <img src="{{item.image}}" alt="{{item.title}}" >
     <h1>{{item.title}}</h1>
-    <p>{{item.author}}</p>
+    <p>por {{item.author}}</p>
 
     <div class="preparo-content">
         <div class="etapa">
             <div class="etapa-titulo">
-                <h2>Ingredientes <span class="status">ESCONDER</span></h2>
+                <h2>Ingredientes <span class="status">MOSTRAR</span></h2>
             </div>
             
             <ul class="lista">
@@ -23,7 +25,7 @@
 
         <div class="etapa">
             <div class="etapa-titulo">
-                <h2>Modo de Preparo <span class="status">ESCONDER</span></h2>
+                <h2>Modo de Preparo <span class="status">MOSTRAR</span></h2>
             </div>
             
             <ul class="lista">
@@ -35,10 +37,10 @@
 
         <div class="etapa">
             <div class="etapa-titulo">
-                <h2>Informações adicionais <span class="status">ESCONDER</span></h2>
+                <h2>Informações adicionais <span class="status">MOSTRAR</span></h2>
             </div>
             
-            <ul class="lista">
+            <ul class="lista" id="lista-none">
                 
                 <li>{{item.information}}</li>
                 

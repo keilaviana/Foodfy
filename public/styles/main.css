@@ -76,6 +76,7 @@ header nav a:hover{
 }
 
 .cards{
+    cursor: pointer;
     max-width: 940px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
