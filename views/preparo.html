@@ -1,37 +1,52 @@
-{% extends "layout.html"%}
+{% extends "layout.html" %}
 
-{% block content%}
+
+
+{% block content %}
 <main>
-    <img src="" alt="">
-    <h1></h1>
-    <p></p>
-    <div class="instrucao">
-        <div class="etapas">
-            <div class="etapas-title">
-                <p>Ingredientes</p>
-                <p class="status"></p>
+    <img src="{{item.image}}" alt="{{item.title}}" >
+    <h1>{{item.title}}</h1>
+    <p>{{item.author}}</p>
+
+    <div class="preparo-content">
+        <div class="etapa">
+            <div class="etapa-titulo">
+                <h2>Ingredientes <span class="status">ESCONDER</span></h2>
             </div>
-            <p class="descricao"></p>
+            
+            <ul class="lista">
+                {% for ingrediente in item.ingredients %}
+                <li>{{ingrediente}}</li>
+                {% endfor %}
+            </ul>
         </div>
 
-        <div class="etapas">
-            <div class="etapas-title">
-                <p>Ingredientes</p>
-                <p class="status"></p>
+        <div class="etapa">
+            <div class="etapa-titulo">
+                <h2>Modo de Preparo <span class="status">ESCONDER</span></h2>
             </div>
-            <p class="descricao"></p>
+            
+            <ul class="lista">
+                {% for modo in item.preparation %}
+                <li>{{modo}}</li>
+                {% endfor %}
+            </ul>
         </div>
 
-        <div class="etapas">
-            <div class="etapas-title">
-                <p>Ingredientes</p>
-                <p class="status"></p>
+        <div class="etapa">
+            <div class="etapa-titulo">
+                <h2>Informações adicionais <span class="status">ESCONDER</span></h2>
             </div>
-            <p class="descricao"></p>
+            
+            <ul class="lista">
+                
+                <li>{{item.information}}</li>
+                
+            </ul>
         </div>
+        
     </div>
 </main>
 
-
-
-{% endblock%}
+<script src="/scripts/script.js"></script>
+{% endblock %}
