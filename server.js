@@ -29,8 +29,8 @@ server.get("/recipes/:index", function(req, res){
     return res.render('preparo', {item: receitas[receitasIndex]})
 })
 
-const port = process.env.port || 5500
+const PORT = process.env.PORT || 5500
 
-server.listen(port, function(){
+server.listen(PORT, function(){
     console.log("servidor rodando")
 })
